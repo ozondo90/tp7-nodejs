@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 
 const departmentSchema = new mongoose.Schema({
-  name : string
+  depId : Number,
+  name : String
 });
 
-const Department = mongoose.model("Department", departmentSchema)
+const Department = mongoose.model("departments", departmentSchema)
 
 module.exports = Department;
